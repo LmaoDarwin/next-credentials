@@ -10,17 +10,38 @@ a {
   color: inherit;
   text-decoration: none;
 }
+main{
+  display: flex;
+  height: 100vh;
+}
+button{
+  margin: auto;
+}
 
 * {
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.form {
+  padding: 20px;
+  margin: 100px auto;
+  width: 600px;
+  height: 500px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: cadetblue;
+  color: azure;
+  border-radius: 10px;
+}
+.form input,.form input:focus{
+  height:40px;
+  border-radius: 30px;
+  padding: 0 30px;
+  outline: none;
+}
+.form button{
+  margin-top: auto;
+  width: 20%;
+  height: 30px;
+  border-radius: 30px;
 }
