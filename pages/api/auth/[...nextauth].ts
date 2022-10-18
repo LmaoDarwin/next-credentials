@@ -24,7 +24,7 @@ export default NextAuth({
             // email: user[0].email,
           // };
         }
-        throw new Error("Account un");
+        return null
         ;
       },
     }),
